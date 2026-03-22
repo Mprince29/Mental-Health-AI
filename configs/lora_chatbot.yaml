@@ -1,0 +1,14 @@
+model: "mlx-community/Qwen2.5-3B-Instruct-4bit"
+data: "./data_chatbot"
+fine_tune_type: lora
+num_layers: 16
+batch_size: 4
+iters: 1000
+learning_rate: 1e-4
+steps_per_report: 20
+steps_per_eval: 100
+save_every: 200
+max_seq_length: 512
+adapter_path: "./adapters_chatbot"
+seed: 42
+train: true

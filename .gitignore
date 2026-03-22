@@ -1,0 +1,43 @@
+# ── Virtual environment ───────────────────────────────────────
+.venv/
+
+# ── Fine-tuned model weights (1.6GB each) ─────────────────────
+# Too large for GitHub. Train locally using the scripts + configs.
+fused_classifier/
+fused_chatbot/
+base_model*/
+*.safetensors
+*.bin
+*.gguf
+
+# ── LoRA adapter checkpoints ──────────────────────────────────
+# Intermediate training artifacts. Regenerate with mlx_lm.lora.
+adapters/
+adapters_chatbot/
+adapters_classifier/
+
+# ── Raw source data ───────────────────────────────────────────
+# Original downloaded CSVs — too large and not redistributable.
+# To reproduce: download from Kaggle (links in README) and run scripts/02_prepare_data.py
+cleanData.csv
+labeled.csv
+master_cleaned.csv
+mental_health_balanced*.csv
+
+# ── Intermediate generated files ──────────────────────────────
+# Regenerated automatically by the pipeline scripts.
+data_chatbot_raw/source_texts.csv
+data_chatbot_raw/checkpoints/
+
+# ── Runtime ───────────────────────────────────────────────────
+logs/
+__pycache__/
+*.pyc
+*.pyo
+
+# ── Local config ──────────────────────────────────────────────
+# Contains local paths. Copy .env.example and fill in your values.
+.env
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
