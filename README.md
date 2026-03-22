@@ -114,4 +114,4 @@ PORT=8000
 
 `ADHD` `Addiction` `Anxiety` `Bipolar` `Depression` `EatingDisorder`
 `Loneliness` `Normal` `OCD` `PTSD` `PersonalityDisorder`
-`Schizophrenia` `Stress` `Suicidal`
+`Schizophrenia` `Stress` `Suicidal`.
